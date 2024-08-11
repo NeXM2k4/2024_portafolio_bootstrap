@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!--Metadatos-->
+    <meta charset = "utf-8">
+    <meta name = "author" content = "Nelson Mejía">
+    <meta name = "description" content = "Portafolio de desarrollo web">
+    <meta name = "keywords" content = "HTML, CSS, JavaScript, Bootstrap">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+
+    <!--Título-->
+    <title>Nelson Mejia | Portafolio web</title>
+    
+    <!--Favicon-->
+    <link rel = "icon" type = "image/x-icon" href = "images/icon-ejercicio.png">
+
+    <!--Estilos CSS-->
+    <link rel = "stylesheet" href = "styles.css">
+
+    <!--Bootstrap HTML-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--Share Tech Mono-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <!--Bootstrap iconos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  </head>
+  
+  <body>
+
+    <!--Barra de Navegacion-->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <a class="navbar-brand" href="#">
+            <img src = "images/icon-ejercicio.png" width = "50" alt = "Logo de la pagina web">
+          </a>
+
+          <ul class = "navbar-nav d-flex justify-content-center align-items-center">
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Sobre mí</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href = "#">Proyectos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href = "#">Testimonios</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href = "#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Seccion Hero-->
+    <section class = "hero align-items-stretch">
+
+      <div class = "hero_principal">
+
+        <img class = "hero_image" src = "https://static.vecteezy.com/system/resources/previews/007/404/906/non_2x/slice-of-pizza-cartoon-cartoon-illustration-cartoon-clipart-free-vector.jpg" alt = "Foto de perfil">
+        <h1>Hola, soy Nelson</h1>
+        <h2>Estudiante de física y ciencias de la computación</h2>
+
+      </div>
+
+      <div class = "hero_inferior">
+        <img class = "img-fluid" id = "hero_image_inferior" src = "images/hero-inferior.svg" alt = "Foto de programador">
+      </div>  
+
+    </section>
+
+    <!--Seccion sobre mí-->
+    <section class = "sobre-mi seccion-oscura">
+      
+      <div class = "contenedor">
+        <h2 class = "seccion-titulo">Sobre mí</h2>
+        <p class = "seccion-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque laboriosam dignissimos recusandae, sint id velit eum quasi rem illo, aliquam quae dolore ex mollitia, delectus est! Sint eius omnis eum!</p>
+      </div>
+
+    </section>
+
+    <!--Experiencia-->
+    <section class = "experiencia seccion-clara">
+
+      <div class = "container text-center">
+
+        <h2 class = "seccion-titulo">Experiencia</h2>
+
+        <div class = "row">
+          <!--Experiencia-->
+          <div class = "columna col-12 col-md-4">
+            <i class="bi bi-laptop icon-xp"></i>
+            <p class = "experiencia-titulo">Desarrollo web</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, soluta quod. Repellendus odit animi.</p>
+            <div class = "badges-contenedor">
+              <span class="badge text-bg-primary">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">JavaScript</span>
+              <span class="badge text-bg-primary">React</span>
+            </div>
+          </div>
+          <!--Artículos-->
+          <div class = "columna col-12 col-md-4">
+            <i class="bi bi-laptop icon-xp"></i>
+            <p class = "experiencia-titulo">Artículos</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, soluta quod. Repellendus odit animi.</p>
+            <div class = "badges-contenedor">
+              <span class="badge text-bg-primary">Escribir</span>
+              <span class="badge text-bg-primary">Edición</span>
+              <span class="badge text-bg-primary">Blogs</span>
+            </div>
+          </div>
+          <!--Estudios-->
+          <div class = "columna col-12 col-md-4">
+            <i class="bi bi-laptop icon-xp"></i>
+            <p class = "experiencia-titulo">Estudiante</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, soluta quod. Repellendus odit animi.</p>
+            <div class = "badges-contenedor">
+              <span class="badge text-bg-primary">freeCodeCamp</span>
+              <span class="badge text-bg-primary">Desarrollo Web</span>
+              <span class="badge text-bg-primary">Python</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--Proyectos-->
+    <section class = "proyectos-recientes seccion-oscura d-flex flex-column">
+
+      <h2 class = "seccion-titulo">Proyectos</h2>
+      <h3 class = "seccion-descripcion-blanco">Estos son algunos proyectos que he creado recientemente</h3>
+
+      <!--Galeria-->
+      <div class = "container proyectos-contenedor text-center">
+        <div class = "row">
+
+          <div class = "col-12 col-md-6 col-lg-4">
+            <div class = "proyecto">
+              <img src = "images/proyecto1 (1).png" alt = "Proyecto 1">
+              <div class = "overlay">
+                <p>Proyecto 1</p>
+                <div class = "iconos-contenedor-proyectos">
+                  <a href = "https://github.com/" target = "_blank" rel = "noopener noreferrer" >
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href = "https://youtube.com/" target = "_blank" rel = "noopener noreferrer" >
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class = "col-12 col-md-6 col-lg-4">
+            <div class = "proyecto">
+              <img src = "images/proyecto2.png" alt = "Proyecto 2">
+              <div class = "overlay">
+                <p>Proyecto 2</p>
+                <div class = "iconos-contenedor-proyectos">
+                  <a href = "https://github.com/" target = "_blank" rel = "noopener noreferrer" >
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href = "https://youtube.com/" target = "_blank" rel = "noopener noreferrer" >
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class = "col-12 col-md-6 col-lg-4">
+            <div class = "proyecto">
+              <img src = "images/proyecto3 (1).png" alt = "Proyecto 3">
+              <div class = "overlay">
+                <p>Proyecto 3</p>
+                <div class = "iconos-contenedor-proyectos">
+                  <a href = "https://github.com/" target = "_blank" rel = "noopener noreferrer" >
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href = "https://youtube.com/" target = "_blank" rel = "noopener noreferrer" >
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class = "col-12 col-md-6 col-lg-4">
+            <div class = "proyecto">
+              <img src = "images/proyecto4.png" alt = "Proyecto 4">
+              <div class = "overlay">
+                <p>Proyecto 4</p>
+                <div class = "iconos-contenedor-proyectos">
+                  <a href = "https://github.com/" target = "_blank" rel = "noopener noreferrer" >
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href = "https://youtube.com/" target = "_blank" rel = "noopener noreferrer" >
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class = "col-12 col-md-6 col-lg-4">
+            <div class = "proyecto">
+              <img src = "images/proyecto5 (1).png" alt = "Proyecto 5">
+              <div class = "overlay">
+                <p>Proyecto 5</p>
+                <div class = "iconos-contenedor-proyectos">
+                  <a href = "https://github.com/" target = "_blank" rel = "noopener noreferrer" >
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href = "https://youtube.com/" target = "_blank" rel = "noopener noreferrer" >
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class = "col-12 col-md-6 col-lg-4">
+            <div class = "proyecto">
+              <img src = "images/proyecto6.png" alt = "Proyecto 6">
+              <div class = "overlay">
+                <p>Proyecto 6</p>
+                <div class = "iconos-contenedor-proyectos">
+                  <a href = "https://github.com/" target = "_blank" rel = "noopener noreferrer" >
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href = "https://youtube.com/" target = "_blank" rel = "noopener noreferrer" >
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!--Mas proyectos-->
+      <a href = "https://github.com/" target = "_blank" rel = "noopener noreferrer">
+        <button type = "button" id = "botones-informacion" class = "btn btn-info">Ver más proyectos</button>
+      </a>
+      
+    </section>
+
+    <!--Articulos-->
+    <section class = "articulos justify-content-start seccion-clara">
+
+      <h2 class = "seccion-titulo">Articulos</h2>
+
+      <div class="card">
+        <div class="card-header">
+          <p>Más recientes</p>
+        </div>
+        <ul class="list-group list-group-flush">
+
+          <a href = "https://www.freecodecamp.org/news/" target = "_blank" rel = "noopener noreferrer">
+            <li class="list-group-item">Create a PC game using JavaScript</li>
+          </a>
+
+          <a href = "https://www.freecodecamp.org/news/" target = "_blank" rel = "noopener noreferrer">
+            <li class="list-group-item">What is a Kalman Filter? How to Simplify Noisy Data in Navigation and Finance</li>
+          </a>
+
+          <a href = "https://www.freecodecamp.org/news/" target = "_blank" rel = "noopener noreferrer">
+            <li class="list-group-item">Common React Mistakes to Avoid</li>
+          </a>
+
+          <a href = "https://www.freecodecamp.org/news/" target = "_blank" rel = "noopener noreferrer">
+            <li class="list-group-item">Learn About Operating Systems In-Depth</li>
+          </a>
+
+          <a href = "https://www.freecodecamp.org/news/" target = "_blank" rel = "noopener noreferrer">
+            <li class="list-group-item">How to Build a Rocket Control System: Basic Control Theory with Python</li>
+          </a>
+
+          <a href = "https://www.freecodecamp.org/news/" target = "_blank" rel = "noopener noreferrer">
+            <li class="list-group-item">How to Index Your Next.js Apps Faster Using IndexNow</li>
+          </a>
+
+        </ul>
+      </div>
+
+      <!--Mas articulos-->
+      <a href = "https://github.com/" target = "_blank" rel = "noopener noreferrer">
+        <button type = "button" id = "botones-informacion-claro" class = "btn btn-info">Ver más artículos</button>
+      </a>
+
+    </section>
+
+    <!--Testimonios-->
+    <section class = "testimonios seccion-oscura">
+      
+      <h2 class = "seccion-titulo">Testimonios</h2>
+      <h3 class = "seccion-descripcion-blanco">Esto es lo que algunos de mis clientes opinan sobre mi trabajo</h3>
+
+      <!--Carrusel-->
+      <div id = "testimonios-carrusel" class = "carousel slide carrusel-dark">
+        
+        <div class="carousel-inner">
+          
+          <div class="carousel-item active">
+            
+            <div class = "container">
+
+              <img class = "testimonio-imagen rounded-circle" src = "images/cliente1.svg" alt = "Cliente 1">
+              <p class = "testimonio-texto">
+                "...Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem est placeat architecto blanditiis porro voluptatem itaque totam maiores..."
+              </p>
+
+              <div class = "testimonio-info">
+                <p class = "cliente">Primer Cliente</p>
+                <p class = "cargo">Cargo Cliente</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="carousel-item">
+            
+            <div class = "container">
+
+              <img class = "testimonio-imagen rounded-circle" src = "images/cliente2.svg" alt = "Cliente 2">
+              <p class = "testimonio-texto">
+                "...Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ipsum voluptas corrupti, ducimus amet ut odit. Iure illum ipsum corrupti vel provident!..."
+              </p>
+
+              <div class = "testimonio-info">
+                <p class = "cliente">Segundo Cliente</p>
+                <p class = "cargo">Cargo Cliente</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="carousel-item">
+            
+            <div class = "container">
+
+              <img class = "testimonio-imagen rounded-circle" src = "images/cliente3.svg" alt = "Cliente 3">
+              <p class = "testimonio-texto">
+                "...Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eos illo aliquam ipsam porro qui amet saepe dignissimos repellat..."
+              </p>
+
+              <div class = "testimonio-info">
+                <p class = "cliente">Tercer Cliente</p>
+                <p class = "cargo">Cargo Cliente</p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+
+      </div>
+
+    </section>
+
+    <!--Contacto-->
+
+
+    <!--Bootstrap CSS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  </body>
+</html>
